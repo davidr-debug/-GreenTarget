@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+  --bg: #0a0f0d;
+  --surface: #111a14;
+  --surface2: #162019;
+  --border: #1e3024;
+  --accent: #3ddc84;
+  --accent2: #00b4d8;
+  --accent3: #f4c542;
+  --text: #e8f5e9;
+  --muted: #6b8f72;
+  --danger: #ff6b6b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background grid */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(61,220,132,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61,220,132,0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Orb */
+body::after {
+  content: '';
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(61,220,132,0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
