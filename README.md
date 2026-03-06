@@ -1,6 +1,6 @@
-# LinkedIn C-Level Scraper & Frontend
+# -GreenTarget (LinkedIn C-Level Scraper)
 
-Este proyecto combina un backend en Node.js (Express + Playwright) para extraer ejecutivos C-Level de LinkedIn y un frontend en React (Vite) para visualizar los resultados.
+Agente de prospección de clientes que combina un backend en Node.js (Express + Playwright) para extraer ejecutivos C-Level de LinkedIn y un frontend en React (Vite) para visualizar los resultados.
 
 ## Estructura del Proyecto
 
